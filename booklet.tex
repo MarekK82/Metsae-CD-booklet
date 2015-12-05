@@ -1,23 +1,35 @@
-% Booklet for the demo album Metsä by heavy metal band Moonsorrow.
+% Booklet for the demo album Metsä by heavy metal band Moonsorrow for printing 
+% on A4 paper.
 
 \documentclass{article}
 
-\usepackage{geometry}
-\usepackage{graphicx}
-
-\pagenumbering{gobble}        % Turn off page numbering.
-\geometry{ %
+\usepackage[
   landscape,
   papersize={12cm,24cm},      % With orientation "landscape" width and height 
                               % are inverted.
   margin=0cm
-}
+]{geometry}
+\usepackage{graphicx}
+\usepackage[                  % Provide crosses in each corner to aid cropping 
+  a4,                         % the logical paper edge.
+  landscape,
+  center,
+  cross
+]{crop}
+
+\pagenumbering{gobble}        % Turn off page numbering.
 \setlength{\parindent}{0cm}
 
 \begin{document}
-  \includegraphics[width=24cm,height=12cm]{contents/cover.jpg}
+  \includegraphics[
+    width=24cm,
+    height=12cm
+  ]{contents/cover.jpg}
   \newpage
   \rotatebox[origin=c]{180}{  % Rotate by 180° for duplex printing at long edge.
-    \includegraphics[width=24cm,height=12cm]{contents/inlay.jpg}
+    \includegraphics[
+      width=24cm,
+      height=12cm
+    ]{contents/inlay.jpg}
   }
 \end{document}

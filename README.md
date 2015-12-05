@@ -2,15 +2,13 @@ Metsä CD booklet
 ================
 
 Creation of a custom CD booklet for the demo album *Metsä* by heavy metal band
-*Moonsorrow*.
+[Moonsorrow](http://moonsorrow.com/).
 
 
 Compile
 -------
 
-One can compile each TeX file separately. <strike>However, the cropping master
-document depends on both the **booklet** and the **back** respectively being
-compiled before.</strike>
+One can compile both the **booklet** and the **back** respectively separately.
 
 
 ### Compiling the booklet ###
