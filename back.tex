@@ -1,10 +1,10 @@
-% CD-Booklet for printing on A4 paper.
+% CD-Back for printing on A4 paper.
 
 \documentclass{article}
 
 \usepackage[
   landscape,
-  papersize={12cm,24cm},      % With orientation "landscape" width and height 
+  papersize={11.8cm,15.1cm},  % With orientation "landscape" width and height 
                               % are inverted.
   margin=0cm
 ]{geometry}
@@ -22,14 +22,7 @@
 
 \begin{document}
   \includegraphics[
-    width=24cm,
-    height=12cm
-  ]{contents/cover.jpg}
-  \newpage
-  \rotatebox[origin=c]{180}{  % Rotate by 180° for duplex printing at long edge.
-    \includegraphics[
-      width=24cm,
-      height=12cm
-    ]{contents/inlay.jpg}
-  }
+    width=15.1cm,
+    height=11.79cm
+  ]{contents/back.jpg}
 \end{document}
